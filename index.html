@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="todo-input">
+            <!-- input -->
+            <label class="mdc-text-field mdc-text-field--filled">
+                <span class="mdc-text-field__ripple"></span>
+                <input id="todo-input" class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                <span class="mdc-line-ripple"></span>
+            </label>
+
+            <!-- button -->
+            <button id="todo-btn" class="mdc-fab mdc-fab--mini mdc-fab--touch">
+                <div class="mdc-fab__ripple"></div>
+                <span class="material-icons mdc-fab__icon">add</span>
+                <div class="mdc-fab__touch"></div>
+            </button>
+        </div>
+
+        <!-- TODO LIST -->
+        <div id="todo-container" class="todos">
+            <div class="mdc-card mdc-card--outlined todo-card">
+                <div class="list-item" style="color: grey;">
+                    Your list is empty.....
+                </div>
+                <div class="action-items">
+                    <button disabled ="mdc-fab mdc-fab--mini mdc-fab--touch complete-btn">
+                        <div class="mdc-fab__ripple"></div>
+                        <span class="material-icons mdc-fab__icon">
+                            <span class="material-icons">
+                                done
+                            </span>
+                        </span>
+                        <div class="mdc-fab__touch"></div>
+                    </button>
+                    <button disabled ="mdc-fab mdc-fab--mini mdc-fab--touch remove-btn">
+                        <div class="mdc-fab__ripple"></div>
+                        <span class="material-icons mdc-fab__icon">
+                            <span class="material-icons">
+                                remove_circle
+                            </span>
+                        </span>
+                        <div class="mdc-fab__touch"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- End TODO LIST wrapper -->
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+<!-- TODO LIST -->
+<!-- items: numbers, bullet point -->
+<!-- some source of input --> 
+
+<!-- study -->
+<!-- eat lunch -->
+<!-- game -->
+<!-- workout -->
+
+<!-- <form action="">
+    <select name="" id=""></select>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <input type="text">
+    <button></button>
+    <input type="button" value="">
+    <input type="checkbox" name="" id="">
+    <input type="radio" name="" id="">
+</form> -->

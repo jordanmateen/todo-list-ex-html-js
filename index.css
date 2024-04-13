@@ -1,0 +1,24 @@
+
+
+.todo-card {
+    margin-top: 15px;
+    padding: 30px;
+    font-family: Manrope;
+
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-btn{
+    background-color: rgb(191, 28, 28) !important;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+.recycling {
+    background-color: rgb(245, 217, 3) !important;
+}
