@@ -1,3 +1,4 @@
+// UI Selectors
 const todoInput = document.getElementById('todo-input');
 const addBtn = document.getElementById('todo-btn') // CTA Call to action
 const todoContainer = document.getElementById('todo-container')
@@ -27,13 +28,14 @@ addBtn.addEventListener('click', (event)=>{
     currentTodo = ''
 })
 
-// bang operator => !
+
+// complete todo handler
 const completeTodo =  (position) => {
-    todoList[position].isComplete = !todoList[position].isComplete
+    todoList[position].isComplete = !todoList[position].isComplete // bang operator => !
     renderTodos()
 }
 
-
+// delete todo handler
 const deleteTodo = (position) => {
     todoList.splice(position, 1)
     renderTodos()
@@ -91,10 +93,3 @@ const card = (todo, index)=>{
 const renderTodos = () => {
     todoContainer.innerHTML = todoList.map(card).join('')
 }
-
-
-
-const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-console.log(fruits);
-
-console.log(fruits.slice(1, 3));
